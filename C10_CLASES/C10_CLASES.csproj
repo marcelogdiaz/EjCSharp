@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E7A19594-8DCB-4092-8317-A3544339B815}</ProjectGuid>
+    <ProjectGuid>{9DA96192-A170-4174-BB39-AA2D4A3A8816}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>C8_CLASES</RootNamespace>
-    <AssemblyName>C8_CLASES</AssemblyName>
+    <RootNamespace>C10_CLASES</RootNamespace>
+    <AssemblyName>C10_CLASES</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,17 +43,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Entidades\Jugador.cs" />
-    <Compile Include="Entidades\Persona.cs" />
-    <Compile Include="Entidades\Referi.cs" />
+    <Compile Include="Entidades\Moto.cs" />
+    <Compile Include="Entidades\Vehiculo.cs" />
+    <Compile Include="Interfaces\IService.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Interfaces\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

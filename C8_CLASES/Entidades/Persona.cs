@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace C8_CLASES.Entidades
 {
-    internal class Persona
+    internal abstract class Persona
     {
         #region PROPERTIES
         /// <summary>
@@ -44,6 +44,16 @@ namespace C8_CLASES.Entidades
         {
             Edad = Edad + 1;
             return Edad;
+        }
+
+        //public virtual void Correr() {
+        //    Console.WriteLine("La persona esta corriendo");
+        //}
+
+        public abstract void Correr();
+
+        public virtual void Precalentar() {
+            Console.WriteLine("La persona esta precalentando");
         }
         #endregion
 

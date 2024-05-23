@@ -32,12 +32,12 @@ namespace C8_CLASES.Entidades
         }
 
         //Metodos propios de un jugador
-        public void Correr()
+        public override void Correr()
         {
             Console.WriteLine($"El JUGADOR {Apellido} esta corriendo");
         }
 
-        public void Precalentar()
+        public override void Precalentar()
         {
             Console.WriteLine($"El JUGADOR {Apellido} esta precalentando");
         }

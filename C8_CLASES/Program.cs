@@ -27,18 +27,28 @@ namespace C8_CLASES
             Console.WriteLine("{0}, {1}: {2} - {3}", j10.Apellido, j10.Nombre, j10.Edad, j10.Posicion);
             Console.ReadLine();
 
-            //armamos un equipo de futbol con jugadores random
-            List<Jugador> equipoLocal = new List<Jugador>();
-            //cargar equipo Local
-            for (int i = 1; i < 12; i++)
-            {
-                equipoLocal.Add(new Jugador($"JLocal{i}", $"ApLocal{i}", 25, i.ToString()));
-            }
+            ////armamos un equipo de futbol con jugadores random
+            //List<Jugador> equipoLocal = new List<Jugador>();
+            ////cargar equipo Local
+            //for (int i = 1; i < 12; i++)
+            //{
+            //    equipoLocal.Add(new Jugador($"JLocal{i}", $"ApLocal{i}", 25, i.ToString()));
+            //}
 
-            Random valor = new Random();
-            int ivalor = valor.Next(0, 12);
-            //mandamos a Precalentar a un jugador cualquiera
-            equipoLocal.ElementAt(ivalor).Precalentar();
+            //Random valor = new Random();
+            //int ivalor = valor.Next(0, 12);
+            ////mandamos a Precalentar a un jugador cualquiera
+            //equipoLocal.ElementAt(ivalor).Precalentar();
+
+
+            j10.Correr();
+            j10.Precalentar();
+
+            //Persona nuevaPersona = new Persona();
+
+            Persona p = new Jugador("Emiliano", "Martinez", 33, "arquero");
+
+            p.Correr();
 
             Console.ReadLine();
         }
